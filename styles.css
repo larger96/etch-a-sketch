@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --squaresNum: 16;
+}
+
+body {
+    text-align: center;
+    background: #444;
+}
+
+header {
+    padding : 20px;
+    font-family: 'Krona One', sans-serif;
+    background: #bbb;
+}
+
+.button-div {
+    padding: 30px;
+}
+
+.container {
+    display: grid;
+    margin: auto;
+    width: 80%;
+    grid-template-columns: repeat(var(--squaresNum), 1fr);
+    grid-template-rows: repeat(var(--squaresNum), 25px);
+    border: 1px solid black;
+}
+
+.content {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.red-glow {
+    background-color: red;
+}
+
