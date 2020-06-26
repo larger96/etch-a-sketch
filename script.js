@@ -9,12 +9,21 @@ function squared(x) {
     return result;
 };
 
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    } 
+    return color;
+}
+
 function createGrid(squaresNum) {
     for (i = 0; i < squared(squaresNum); i++) {
         let div = document.createElement('div');
         div.classList.add('content');
         div.addEventListener('mouseenter', () => {
-            div.classList.add('red-glow');
+            div.style.backgroundColor = getRandomColor();
         });
         container.appendChild(div);
     }

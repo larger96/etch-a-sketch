@@ -26,9 +26,10 @@ header {
 .container {
     display: grid;
     margin: auto;
-    width: 80%;
+    width: 700px;
+    height: 700px;
     grid-template-columns: repeat(var(--squaresNum), 1fr);
-    grid-template-rows: repeat(var(--squaresNum), 25px);
+    grid-template-rows: repeat(var(--squaresNum), 1fr);
     border: 1px solid black;
 }
 
@@ -41,3 +42,19 @@ header {
     background-color: red;
 }
 
+button {
+    font-family: 'Krona One', sans-serif;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: #bbb;
+    opacity:0.7;
+}
+button:hover {
+    cursor: pointer;
+    opacity: 1;
+    border-color: gray;
+    border-width: 1px;
+    border-style: solid;
+}
